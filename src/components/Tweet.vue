@@ -34,6 +34,31 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "Tweet",
+  props: {
+    user: {
+      name: {
+      type: String,
+      },
+      image: {
+        type: String,
+      },
+      handle: {
+        type: String,
+      },
+    },
+    timestamp: {
+      type: String,
+    },
+    message: {
+      type: String,
+    },
+  }
+}
+</script>
+
 <style scoped>
 a {
   color: #42b983;
